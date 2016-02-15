@@ -1,6 +1,3 @@
-🌍
-*[Čeština](README-cs.md) ∙ [Ελληνικά](README-el.md) ∙ [English](README.md) ∙ [Español](README-es.md) ∙ [Français](README-fr.md) ∙ [Italiano](README-it.md) ∙ [日本語](README-ja.md) ∙ [한국어](README-ko.md) ∙ [Português](README-pt.md) ∙ [Русский](README-ru.md) ∙ [Slovenščina](README-sl.md) ∙ [Українська](README-uk.md) ∙ [中文](README-zh.md) ∙ [繁體中文](README-zh-Hant.md)*
-
 # 命令行的艺术
 
 [![Join the chat at https://gitter.im/jlevy/the-art-of-command-line](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jlevy/the-art-of-command-line?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -45,7 +42,7 @@
 
 ## 基础
 
-- 学习 Bash 的基础知识。具体来说，输入 `man bash` 并至少全文浏览一遍; 它很简单并且不长。其他的 shell 可能很好用，但 Bash 功能强大且几乎所有情况下都是可用的 （ *只*学习 zsh，fish 或其他的 shell 的话，在你自己的电脑上会显得很方便，但在很多情况下会限制你，比如当你需要在服务器上工作时）。
+- 学习 Bash 的基础知识。具体来说，输入 `man bash` 并至少全文浏览一遍; 它很简单并且不长。其他的 shell 可能很好用，但 Bash 功能强大且几乎所有情况下都是可用的 （ *只*学习 zsh，fish 或其他的 shell 的话，在你自己的电脑上会显得很方便，但在很多情况下会限制你，比如当你需要在服务器上工作时）。 cony:完成20%
 
 - 学习并掌握至少一个基于文本的编辑器。通常 Vim （`vi`） 会是你最好的选择，因为在终端里进行随机编辑 Vim 真的毫无敌手，哪怕是 Emacs、某大型 IDE 甚至时下非常流行的编辑器。
 
