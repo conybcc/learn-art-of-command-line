@@ -1,6 +1,4 @@
-# 命令行的艺术
-
-[![Join the chat at https://gitter.im/jlevy/the-art-of-command-line](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jlevy/the-art-of-command-line?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# 命令行的艺术 - cony的学习笔记
 
 - [必读](#必读)
 - [基础](#基础)
@@ -14,8 +12,6 @@
 - [免责声明](#免责声明)
 - [授权条款](#授权条款)
 
-
-![curl -s 'https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md' | egrep -o '`\w+`' | tr -d '`' | cowsay -W50](cowsay.png)
 
 熟练使用命令行是一种常常被忽视，或被认为难以掌握的技能，但实际上，它会提高你作为工程师的灵活性以及生产力。本文是一份我在 Linux 上工作时，发现的一些命令行使用技巧的摘要。有些技巧非常基础，而另一些则相当复杂，甚至晦涩难懂。这篇文章并不长，但当你能够熟练掌握这里列出的所有技巧时，你就学会了很多关于命令行的东西了。
 
@@ -44,15 +40,17 @@
 
 - 学习 Bash 的基础知识。具体来说，输入 `man bash` 并至少全文浏览一遍; 它很简单并且不长。其他的 shell 可能很好用，但 Bash 功能强大且几乎所有情况下都是可用的 （ *只*学习 zsh，fish 或其他的 shell 的话，在你自己的电脑上会显得很方便，但在很多情况下会限制你，比如当你需要在服务器上工作时）。 cony:完成20%
 
-- 学习并掌握至少一个基于文本的编辑器。通常 Vim （`vi`） 会是你最好的选择，因为在终端里进行随机编辑 Vim 真的毫无敌手，哪怕是 Emacs、某大型 IDE 甚至时下非常流行的编辑器。
+- 学习并掌握至少一个基于文本的编辑器。通常 Vim （`vi`） 会是你最好的选择，因为在终端里进行随机编辑 Vim 真的毫无敌手，哪怕是 Emacs、某大型 IDE 甚至时下非常流行的编辑器。 cony:已经使用好几年了,熟悉程度还不错
 
-- 学会如何使用 `man` 命令去阅读文档。学会使用 `apropos` 去查找文档。了解有些命令并不对应可执行文件，而是Bash内置的，可以使用 `help` 和 `help -d` 命令获取帮助信息。
+- 学会如何使用 `man` 命令去阅读文档。学会使用 `apropos` 去查找文档。了解有些命令并不对应可执行文件，而是Bash内置的，可以使用 `help` 和 `help -d` 命令获取帮助信息。 cony: man会使用, apropos用于通过关键字查找命令的含义
 
-- 学会使用 `>` 和 `<` 来重定向输出和输入，学会使用 `|` 来重定向管道。明白 `>` 会覆盖了输出文件而 `>>` 是在文件末添加。了解标准输出 stdout 和标准错误 stderr。
+- 学会使用 `>` 和 `<` 来重定向输出和输入，学会使用 `|` 来重定向管道。明白 `>` 会覆盖了输出文件而 `>>` 是在文件末添加。了解标准输出 stdout 和标准错误 stderr。 cony:明白,并且经常使用`>`, `>>` ,`|`
 
-- 学会使用通配符 `*` （或许再算上 `?` 和 `[`...`]`） 和引用以及引用中 `'` 和 `"` 的区别。
+- 学会使用通配符 `*` （或许再算上 `?` 和 `[`...`]`） 和引用以及引用中 `'` 和 `"` 的区别。 cony:不懂, todo
 
-- 熟悉 Bash 任务管理工具：`&`，**ctrl-z**，**ctrl-c**，`jobs`，`fg`，`bg`，`kill` 等。
+- 熟悉 Bash 任务管理工具：`&`，**ctrl-z**，**ctrl-c**，`jobs`，`fg`，`bg`，`kill` 等。 cony:使用`&`的任务就进入了后台, 通过jobs就能查看到,根据程序不同,有的进入后台就是Stopped状态,有的就是Running状态, 使用**ctrl-z**使得任务停止并进入后台,可以通过`bg`让任务在后台继续执行, fg是让任务回到前台
+
+- cony stop place
 
 - 了解 `ssh`，以及学会通过使用 `ssh-agent`，`ssh-add` 等命令来实现基本的无密码认证。
 
